@@ -1,0 +1,41 @@
+{
+    "randomAchievementExampleOne": {
+        "name": {
+            "name": "Name Of Achievement"
+        },
+        "desc": {
+            "desc": "Name Of Description"
+        },
+        "progress": {
+            "progress": 0,
+            "userData": true
+        },
+        "total": {
+            "total": 100
+        },
+        "progress-bar-background-color": {
+            "progress-bar-background-color": "#0c8c7f"
+        },
+        "progress-bar-color": {
+            "progress-bar-color": "#12ccb9"
+        },
+        "picture": {
+            "picture": "res://Achievements/Images/some-achievement-picture.png"
+        }
+    },    
+    "randomAchievementExampleTwo": {
+        "name": {
+            "name": "Cool Achievement"
+        },
+        "desc": {
+            "desc": "Cool Description"
+        },
+        "progress": {
+            "progress": 0,
+            "userData": true
+        },
+        "total": {
+            "total": 10
+        }
+    }
+}
