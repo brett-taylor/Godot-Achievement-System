@@ -15,3 +15,6 @@ func init(achievements):
 
 func _on_Button_pressed():
 	hide();
+
+func _update_bar(achievement_name, achievement):
+    achievementsNodes[achievement_name].update_progress_bar(achievement)
