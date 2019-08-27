@@ -13,17 +13,17 @@ func set_achievement(achievement):
 	
 	set_text(achievement);
 	update_progress_bar(achievement);
-	update_progress_bar_text(achievement);
 	set_custom_progress_bar_colors(achievement);
 	set_or_remove_picture(achievement);
+	progress_bar.max_value = achievement.get_total();
 
 func set_text(achievement):
 	$MarginContainer/HBoxContainer/MarginContainer/VBoxContainer/Name.set_text(achievement.get_name());
 	$MarginContainer/HBoxContainer/MarginContainer/VBoxContainer/Description.set_text(achievement.get_desc());
 
 func update_progress_bar(achievement):
-	progress_bar.max_value = achievement.get_total();
 	progress_bar.value = achievement.get_progress();
+	update_progress_bar_text(achievement);
 
 func update_progress_bar_text(achievement):
 	if achievement.get_progress() >= achievement.get_total():
